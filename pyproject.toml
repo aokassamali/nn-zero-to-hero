@@ -1,0 +1,25 @@
+[project]
+name = "nn-zero-to-hero"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Asad Kassamali", email = "168261295+aokassamali@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.4.6",
+]
+
+[project.scripts]
+nn-zero-to-hero = "nn_zero_to_hero:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
